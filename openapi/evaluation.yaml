@@ -7,6 +7,8 @@ servers:
 paths:
   /backend/eval:
     get:
+      tags:
+        - Companies
       responses:
         '200':
           description: OK
