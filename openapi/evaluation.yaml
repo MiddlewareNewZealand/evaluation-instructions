@@ -1,0 +1,43 @@
+openapi: '3.0.2'
+info:
+  title: MWNZ companies
+  version: '1.0'
+servers:
+  - url: https://api.server.test/v1
+paths:
+  /backend/eval:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/companies"
+              examples:
+                MWNZ:
+                  value:
+                    id: 1
+                    name: MWNZ
+                    description: "..is awesome"
+                Other:
+                  value:
+                    id: 2
+                    name: Other
+                    description: "....is not"
+                   
+components:
+  schemas:
+    companies:
+      type: object
+      xml:
+        name: Data
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description: 
+          type: string
+        
+            
