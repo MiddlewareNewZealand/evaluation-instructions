@@ -1,0 +1,62 @@
+openapi: "3.0.2"
+info:
+  title: MWNZ companies
+  version: "1.0"
+  description: Your Node.js API should produce a JSON response that aligns with this specification
+servers:
+  - url: https://your-application.com/v1
+paths:
+  /companies/{id}:
+    get:
+      tags:
+        - Companies
+      parameters:
+        - name: id
+          description: Company ID
+          in: path
+          required: true
+          schema:
+            type: number
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Company"
+              examples:
+                MWNZ:
+                  value:
+                    id: 1
+                    name: MWNZ
+                    description: "..is awesome"
+                Other:
+                  value:
+                    id: 2
+                    name: Other
+                    description: "....is not"
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+  schemas:
+    Company:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        error_description:
+          type: string

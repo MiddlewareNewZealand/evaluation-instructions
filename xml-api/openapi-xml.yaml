@@ -1,21 +1,29 @@
-openapi: '3.0.2'
+openapi: "3.0.2"
 info:
-  title: MWNZ companies
-  version: '1.0'
+  title: MWNZ companies source XML
+  version: "1.0"
+  description: Your Node.js API should use this API to get a company and transform it to align with the evaluation-output.yaml
 servers:
-  - url: https://api.server.test/v1
+  - url: https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/blob/main
 paths:
-  /backend/eval:
+  /xml-api/{id}.xml:
     get:
       tags:
-        - Companies
+        - Companies XML
+      parameters:
+        - name: id
+          description: Company ID
+          in: path
+          required: true
+          schema:
+            type: number
       responses:
-        '200':
+        "200":
           description: OK
           content:
             application/xml:
               schema:
-                $ref: "#/components/schemas/companies"
+                $ref: "#/components/schemas/XmlCompany"
               examples:
                 MWNZ:
                   value:
@@ -27,10 +35,10 @@ paths:
                     id: 2
                     name: Other
                     description: "....is not"
-                   
+
 components:
   schemas:
-    companies:
+    XmlCompany:
       type: object
       xml:
         name: Data
@@ -39,7 +47,5 @@ components:
           type: integer
         name:
           type: string
-        description: 
+        description:
           type: string
-        
-            
