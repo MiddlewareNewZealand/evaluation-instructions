@@ -21,7 +21,7 @@ paths:
         "200":
           description: OK
           content:
-            application/xml:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Company"
               examples:
@@ -35,6 +35,12 @@ paths:
                     id: 2
                     name: Other
                     description: "....is not"
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
 
 components:
   schemas:
@@ -46,4 +52,11 @@ components:
         name:
           type: string
         description:
+          type: string
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        error_description:
           type: string
