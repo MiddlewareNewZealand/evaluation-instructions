@@ -4,7 +4,7 @@ info:
   version: "1.0"
   description: Your Node.js API should produce a JSON response that aligns with this specification
 servers:
-  - url: https://api.server.test/v1
+  - url: https://your-application.com/v1
 paths:
   /companies/{id}:
     get:
