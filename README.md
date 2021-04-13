@@ -32,5 +32,9 @@ The purpose of this exercise is to evaluate your approach to creating a very sim
 - Existing XML API curl example
 
   ```bash
-  curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/blob/main/xml-api/1.xml
+  curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/xml-api/1.xml
+  ```
+
+  ```bash
+  curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/xml-api/2.xml
   ```
