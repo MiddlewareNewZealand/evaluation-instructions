@@ -1,21 +1,29 @@
-openapi: '3.0.2'
+openapi: "3.0.2"
 info:
   title: MWNZ companies
-  version: '1.0'
+  version: "1.0"
+  description: Your Node.js API should produce a JSON response that aligns with this specification
 servers:
   - url: https://api.server.test/v1
 paths:
-  /backend/eval:
+  /companies/{id}:
     get:
       tags:
         - Companies
+      parameters:
+        - name: id
+          description: Company ID
+          in: path
+          required: true
+          schema:
+            type: number
       responses:
-        '200':
+        "200":
           description: OK
           content:
             application/xml:
               schema:
-                $ref: "#/components/schemas/companies"
+                $ref: "#/components/schemas/Company"
               examples:
                 MWNZ:
                   value:
@@ -27,19 +35,15 @@ paths:
                     id: 2
                     name: Other
                     description: "....is not"
-                   
+
 components:
   schemas:
-    companies:
+    Company:
       type: object
-      xml:
-        name: Data
       properties:
         id:
           type: integer
         name:
           type: string
-        description: 
+        description:
           type: string
-        
-            
