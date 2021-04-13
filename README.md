@@ -14,8 +14,9 @@ The purpose of this exercise is to evaluate your approach to creating a very sim
 ## Evaluation details
 
 - Create an application using any libraries you wish
-- When a request is received make another request to the [existing backend xml service](./xml-api/openapi-xml.yaml)
-- Transform the xml response into a json format that matches the [supplied OpenAPI specification](./openapi-companies.yaml)
+- When a request is received by the application, make another request to the [existing backend xml service](./xml-api/openapi-xml.yaml)
+- Transform the xml response into a json format that matches the [supplied OpenAPI specification](./openapi-companies.yaml) and return it to the client
+- Ensure that the application code handles errors from the xml service appropriately
 - Ensure that the application code is tested appropriately
 
 ## Things to consider
