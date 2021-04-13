@@ -26,10 +26,10 @@ The purpose of this exercise is to evaluate your approach to creating a very sim
 
 ## Resources
 
-1. [Your API OpenAPI specification](./openapi-companies.yaml)
-2. [Existing XML API OpenAPI specification](./xml-api/openapi-xml.yaml)
-3. Existing XML API curl example
+- [Your API OpenAPI specification](./openapi-companies.yaml)
+- [Existing XML API OpenAPI specification](./xml-api/openapi-xml.yaml)
+- Existing XML API curl example
 
-   ```bash
-   curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/blob/main/xml-api/1.xml
-   ```
+  ```bash
+  curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/blob/main/xml-api/1.xml
+  ```
