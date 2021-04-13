@@ -13,16 +13,16 @@ The purpose of this exercise is to evaluate your approach to creating a very sim
 
 ## Evaluation details
 
-1. Create an application using any libraries you wish
-2. When a request is received make another request to the [existing backend xml service](./xml-api/openapi-xml.yaml)
-3. Transform the xml response into a json format that matches the [supplied OpenAPI specification](./openapi-companies.yaml)
-4. Ensure that the application code is tested appropriately
+- Create an application using any libraries you wish
+- When a request is received make another request to the [existing backend xml service](./xml-api/openapi-xml.yaml)
+- Transform the xml response into a json format that matches the [supplied OpenAPI specification](./openapi-companies.yaml)
+- Ensure that the application code is tested appropriately
 
 ## Things to consider
 
-- You will need to tell us how you went about creating your application and why you created it in the way that you did.
+- You will need to tell us how you went about creating your application and why you created it in the way that you did
 - Think about how you would deploy the application into a production environment
-- Think about how your application is documented - remember that your audience (us) are technical and should be able to run your code.
+- Think about how your application is documented - remember that your audience (us) are technical and should be able to run your code
 
 ## Resources
 
