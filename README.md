@@ -29,6 +29,7 @@ The purpose of this exercise is to evaluate your approach to creating a very sim
 1. [Your API OpenAPI specification](./openapi-companies.yaml)
 2. [Existing XML API OpenAPI specification](./xml-api/openapi-xml.yaml)
 3. Existing XML API curl example
+
    ```bash
    curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/blob/main/xml-api/1.xml
    ```
