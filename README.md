@@ -34,6 +34,8 @@ The diagram below illustrates what it is that you will need to build. In simple 
 
 ## Things to consider
 
+When you come to see us you will need to consider the following so that we can chat about what you have done.
+
 - You will need to tell us how you went about creating your application and why you created it in the way that you did
 - Think about how you would deploy the application into a production environment
 - Think about how your application is documented - remember that your audience (us) are technical and should be able to run your code
