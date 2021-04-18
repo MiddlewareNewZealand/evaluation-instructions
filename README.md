@@ -6,19 +6,29 @@ The purpose of this exercise is to evaluate your approach to creating a very sim
 
 The diagram below illustrates what it is that you will need to build. In simple terms, we expect you to build a very simple applicaiton that connects to a static XML API and transforms it to a JSON response. There are more detailed instructions provided below.
 
-![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/images/components.puml)
+![Component Overview](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/images/components.puml)
 
 ## Sequence
 
-1. Develop a simple Node.js API (see [Evaluation Details](#-Evaluation-details))
-2. Publish your code to a source repository that we can access
-3. Provide us with a link to this code at least a day before you come to see us
+1. Read these instrucitons carefullt 
+2. Develop a simple Node.js API (see [Evaluation Details](#-Evaluation-details))
+3. Publish your code to a source repository that we can access
+4. Provide us with a link to this code at least a day before you come to see us
 
 ## Evaluation details
 
 - Create an application using any libraries you wish
-- When a request is received by the application, make another request to the [existing backend xml service](./xml-api/openapi-xml.yaml)
-- Transform the xml response into a json format that matches the [supplied OpenAPI specification](./openapi-companies.yaml) and return it to the client
+- When a request is received by the application, make another request to the existing static backend xml service - see curl examples below.
+
+  ```bash
+  curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/xml-api/1.xml
+  ```
+
+  ```bash
+  curl https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/xml-api/2.xml
+  ```
+
+- Transform the backend xml response into a json format that matches the [supplied OpenAPI specification](./openapi-companies.yaml) and return it to the client
 - Ensure that the application code handles errors from the xml service appropriately
 - Ensure that the application code is tested appropriately
 
