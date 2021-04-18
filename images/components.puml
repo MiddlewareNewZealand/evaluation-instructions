@@ -1,0 +1,24 @@
+@startuml evaluation-instructions
+title
+Evaluation Overview
+Components
+end title
+component browser as B
+interface "Your API" as YA
+component "Your node.js\napplication" as N #LightGreen
+component "Static xml\nAPI" as A
+
+B <--> YA
+N -left( YA
+N <-> A
+note top of A
+    The static xml API is
+    simply a static file
+    that is part of this
+    repo.
+end note
+note bottom of N
+    This is the component that
+    we would like you to build
+end note
+@enduml

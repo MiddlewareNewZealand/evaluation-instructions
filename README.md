@@ -4,6 +4,8 @@
 
 The purpose of this exercise is to evaluate your approach to creating a very simple Node.js backend application. We expect you to spend a couple of hours or less to complete this, and it will be used to evaluate how you approach a technical task.
 
+![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/images/components.puml)
+
 ## Sequence
 
 1. Clone this repo `git clone https://github.com/MiddlewareNewZealand/evaluation-instructions.git`
