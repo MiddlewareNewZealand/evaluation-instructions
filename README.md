@@ -4,13 +4,13 @@
 
 The purpose of this exercise is to evaluate your approach to creating a very simple Node.js backend application. We expect you to spend a couple of hours or less to complete this, and it will be used to evaluate how you approach a technical task.
 
-The diagram below illustrates what it is that you will need to build. In simple terms, we expect you to build a very simple applicaiton that connects to a static XML API and transforms it to a JSON response. There are more detailed instructions provided below.
+The diagram below illustrates what it is that you will need to build. In simple terms, we expect you to build a very simple application that connects to a static XML API and transforms it to a JSON response. There are more detailed instructions provided below.
 
 ![Component Overview](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/main/images/components.puml)
 
 ## Sequence
 
-1. Read these instrucitons carefullt 
+1. Read these instrucitons carefully.
 2. Develop a simple Node.js API (see [Evaluation Details](#-Evaluation-details))
 3. Publish your code to a source repository that we can access
 4. Provide us with a link to this code at least a day before you come to see us
