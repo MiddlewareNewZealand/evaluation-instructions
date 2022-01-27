@@ -5,7 +5,7 @@ Components
 end title
 component browser as B
 interface "Your API" as YA
-component "Your node.js or .NET\napplication" as N #LightGreen
+component "Your application" as N #LightGreen
 component "Static xml\nAPI" as A
 
 B <--> YA
