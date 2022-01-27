@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The purpose of this exercise is to evaluate your approach to creating a very simple Node.js or .NET backend application. We expect you to spend a couple of hours or less to complete this, and it will be used to evaluate how you approach a technical task.
+The purpose of this exercise is to evaluate your approach to creating a very simple backend application using the language of your choice. We expect you to spend a couple of hours or less to complete this, and it will be used to evaluate how you approach a technical task.
 
 The diagram below illustrates what it is that you will need to build. In simple terms, we expect you to build a very simple application that connects to a static XML API and transforms it to a JSON response. There are more detailed instructions provided below.
 
