@@ -2,7 +2,7 @@ openapi: "3.0.2"
 info:
   title: MWNZ companies source XML
   version: "1.0"
-  description: Your Node.js API should use this API to get a company and transform it to align with the evaluation-output.yaml
+  description: Your API should use this API to get a company and transform it to align with the evaluation-output.yaml
 servers:
   - url: https://raw.githubusercontent.com/MiddlewareNewZealand/evaluation-instructions/blob/main
 paths:

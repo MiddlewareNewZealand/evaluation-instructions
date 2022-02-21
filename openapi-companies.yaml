@@ -2,7 +2,7 @@ openapi: "3.0.2"
 info:
   title: MWNZ companies
   version: "1.0"
-  description: Your Node.js API should produce a JSON response that aligns with this specification
+  description: Your API should produce a JSON response that aligns with this specification
 servers:
   - url: https://your-application.com/v1
 paths:
